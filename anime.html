@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header>
+        <h2 class="logo">AnimeWiki</h2>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./anime.html">Anime</a>
+            <a href="./characters.html">Characters</a>
+            <a href="./about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>WELCOME TO ANIME PAGE</h1>
+    </section>
+
+    <section class="anime-slider">
+
+        <div class="slider-container">
+
+            <div class="anime-card-slider">
+                <img src="https://i.ebayimg.com/images/g/FToAAOSweQFlmta5/s-l1200.jpg"
+                     alt="Naruto">
+
+                <h2>Naruto</h2>
+
+                <p>Explore the world of Naruto.</p>
+
+                <a href="naruto.html" class="details-slider-btn">
+                    View Details
+                </a>
+            </div>
+
+            <div class="anime-card-slider">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg" alt="one piece">
+
+                <h2>One Piece</h2>
+
+                <p>Explore the world of One Piece.</p>
+
+                <a href="onepiece.html" class="details-slider-btn">
+                    View Details
+                </a>
+            </div>
+
+
+            <div class="anime-card-slider">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMfmqofWj6RkkdJZkoMOmc1S4mVaO7K_WN1znDGPRu1KC0NK5QdXRk6Nr&s=10"
+                     alt="Aot">
+
+                <h2>Attack on Titan</h2>
+
+                <p>Explore the world of Attack on Titan.</p>
+
+                <a href="attackontitan.html" class="details-slider-btn">
+                    View Details
+                </a>
+            </div>
+
+        </div>
+
+        <button class="prev-btn" onclick="prevSlide()">
+            ❮
+        </button>
+
+        <button class="next-btn" onclick="nextSlide()">
+            ❯
+        </button>
+
+    </section>
+    <section class="anime-container">
+
+        <div class="anime-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg" alt="Anime poster">
+            <h3>One Piece</h3>
+            <a href="onepiece.html" class="details-btn">View Details</a>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.ebayimg.com/images/g/FToAAOSweQFlmta5/s-l1200.jpg" alt="Anime poster">
+            <h3>Naruto</h3>
+            <a href="naruto.html" class="details-btn">View Details</a>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMfmqofWj6RkkdJZkoMOmc1S4mVaO7K_WN1znDGPRu1KC0NK5QdXRk6Nr&s=10" alt="Anime poster">
+            <h3>Attack on Titan</h3>
+            <a href="aot.html" class="details-btn">View Details</a>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
