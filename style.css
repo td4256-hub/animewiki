@@ -53,7 +53,13 @@ nav a:hover {
     font-size: 18px;
 }
 
-
+.hero img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 .search {
     text-align: center;
     padding: 30px;
@@ -207,6 +213,109 @@ p {
     height: auto;
 }
 
+.mha-title {
+    color: #e63946;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.mha-page {
+    background-color: #e8f5e9;
+    color: #a7e49f;
+}
+.mha-page p {
+    color: #111;
+}
+.mha-section-title {
+    color: #0bb7f0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.mha-image {
+    width: 30%;
+}
+
+.mha-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #e63946;
+}
+.izuku-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.izuku-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 550px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+/* =========================
+   DEMON SLAYER PAGE
+   ========================= */
+
+.demon-slayer-page {
+    background-color: #f4eee1;
+    color: #222;
+}
+
+.demon-slayer-page p {
+    color: #222;
+}
+
+.demon-title {
+    color: #b71c1c;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.demon-section-title {
+    color: #1565c0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.demon-image {
+    width: 30%;
+}
+
+.demon-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #b71c1c;
+}
+
+.tanjiro-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tanjiro-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 550px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.author-name {
+    color: #ffd60a;
+    font-weight: bold;
+}
+
 .anime-card-slider p {
     color: #ccc;
 }
@@ -245,9 +354,9 @@ p {
     right: 20px;
 }
 .character-card {
-    width: 250px;
+    width: 100%;
     padding: 15px;
-    margin: 30px;
+    margin: 0;
     background-color: #222;
     color: white;
     text-align: center;
@@ -257,7 +366,7 @@ p {
 .character-card img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     border-radius: 5px;
 }
@@ -277,9 +386,10 @@ p {
     border-radius: 5px;
 }
 .character-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px 20px;
+    align-items: start;
 }
